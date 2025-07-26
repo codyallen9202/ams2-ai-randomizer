@@ -1,8 +1,9 @@
 import xml.etree.ElementTree as ET
 import random
+import numpy as np
 
 def get_ratings():
-    ovr = random.randint(1, 100)
+    ovr = int(random.triangular(1, 100, 50))
     min_value = max(1, ovr - 5)
     max_value = min(100, ovr + 5)
 
