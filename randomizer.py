@@ -1,8 +1,6 @@
 import xml.etree.ElementTree as ET
 import random
 
-file_path = r"" # <---- PUT THE PATH TO THE XML YOU WISH TO CHANGE HERE
-
 def get_ratings():
     ovr = random.randint(1, 100)
     min_value = max(1, ovr - 5)
@@ -29,7 +27,7 @@ def get_ratings():
     return values
 
 
-def main():
+def main(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
 
@@ -47,4 +45,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    file_path = input("Paste the XML file path: ").strip().strip('"')
+    main(file_path)
