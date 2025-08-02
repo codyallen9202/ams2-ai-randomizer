@@ -26,8 +26,7 @@ A simple Python app that randomizes all AI driver stats in Automobilista 2 for u
 
 ## Requirements
 
-* Python 3
-* No external libraries required — uses built-in `tkinter`, `os`, and `xml.etree.ElementTree`.
+* Must have the mod [NAMeS](https://www.overtake.gg/downloads/names-real-drivers-for-ams2.50989/)
 
 ## Notes
 
